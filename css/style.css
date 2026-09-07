@@ -274,22 +274,116 @@ p {
   flex-wrap: wrap;
 }
 
-.book-cover-placeholder {
+.hero-author {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.book-cover {
   width: 300px;
   min-width: 300px;
   height: 400px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #C5A55A;
-  border-radius: 8px;
+  perspective: 800px;
+  flex-shrink: 0;
+}
+
+.book-cover-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: rotateY(-8deg);
+  transform-style: preserve-3d;
+  box-shadow: 15px 10px 40px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0 6px 6px 0;
+}
+
+.book-cover-spine {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to right, #0f1a30, #1B2A4A);
+  transform: rotateY(90deg);
+  transform-origin: right;
+  border-radius: 4px 0 0 4px;
+}
+
+.book-cover-front {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #1B2A4A 0%, #0f1a30 100%);
+  border: 3px solid #C5A55A;
+  border-radius: 0 6px 6px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #C5A55A;
-  font-size: 1.2rem;
-  font-weight: 600;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-cover-front::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid rgba(197, 165, 90, 0.3);
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.book-cover-content {
   text-align: center;
-  padding: 20px;
-  flex-shrink: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.book-cover-title {
+  color: #FFFFFF;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 15px;
+  letter-spacing: 0.3px;
+}
+
+.book-cover-divider {
+  width: 50px;
+  height: 2px;
+  background-color: #C5A55A;
+  margin: 0 auto 15px;
+}
+
+.book-cover-subtitle {
+  color: #C5A55A;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: auto;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.book-cover-author {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(197, 165, 90, 0.25);
+  width: 100%;
 }
 
 /* --------------------------------------------------------------------------
@@ -331,6 +425,43 @@ p {
   max-width: 700px;
   margin: -20px auto 40px;
   line-height: 1.7;
+}
+
+.learn-section {
+  padding: 70px 0;
+}
+
+.learn-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-intro {
+  text-align: center;
+  color: #555;
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.audience-section {
+  padding: 70px 0;
+  background-color: #F5F5F0;
+}
+
+.audience-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.testimonials-section {
+  padding: 70px 0;
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* --------------------------------------------------------------------------
@@ -828,16 +959,20 @@ p {
   line-height: 1.7;
 }
 
-.testimonial .author {
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  line-height: 1.7;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
   font-weight: 600;
   color: #1B2A4A;
   font-style: normal;
-}
-
-.testimonial .author-title {
-  font-size: 0.85rem;
-  color: #888;
-  font-style: normal;
+  font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -1144,10 +1279,14 @@ p {
     justify-content: center;
   }
 
-  .book-cover-placeholder {
+  .book-cover {
     width: 220px;
     min-width: 220px;
     height: 300px;
+  }
+
+  .book-cover-title {
+    font-size: 1.1rem;
   }
 
   /* Sections */
@@ -1264,11 +1403,14 @@ p {
     font-size: 1rem;
   }
 
-  .book-cover-placeholder {
+  .book-cover {
     width: 180px;
     min-width: 180px;
     height: 250px;
-    font-size: 1rem;
+  }
+
+  .book-cover-title {
+    font-size: 0.95rem;
   }
 
   .btn-lg {
