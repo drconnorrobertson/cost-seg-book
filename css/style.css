@@ -31,6 +31,9 @@ body {
   background-color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img {
@@ -952,9 +955,7 @@ p {
 }
 
 .testimonial p {
-  font-style: italic;
   margin-bottom: 15px;
-  padding-top: 20px;
   color: #555;
   line-height: 1.7;
 }
@@ -1085,6 +1086,7 @@ p {
   background-color: #111827;
   color: #FFFFFF;
   padding: 50px 0 20px;
+  margin-top: auto;
 }
 
 .footer-grid {
