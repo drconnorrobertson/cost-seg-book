@@ -6,6 +6,7 @@ The Cost Segregation Book is a published resource covering the fundamentals and 
 
 ## Key Pages
 - Home: https://costsegbook.com/
+- Learning Library (200 decision guides across 20 topic clusters): https://costsegbook.com/blog/
 
 ## Contact
 - Book a discovery call: https://aetaxadvisors.com/discovery
