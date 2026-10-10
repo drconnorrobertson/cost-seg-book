@@ -14,6 +14,908 @@
       ]
     }
   ],
-  "buildCommand": "node scripts/prepare-static.mjs && node brand-build.cjs && node scripts/brand-isolation.mjs dist && node scripts/brand-isolation.mjs dist --check && node scripts/brand-check.mjs dist",
-  "outputDirectory": "dist"
+  "buildCommand": "node scripts/prepare-static.mjs && node brand-build.cjs && node scripts/brand-isolation.mjs dist && node scripts/brand-isolation.mjs dist --check && node scripts/brand-check.mjs dist && node scripts/consolidate-content.cjs",
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/blog/section-1245-property-implementation/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-mistakes/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-mistakes/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-examples/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-mistakes/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-advanced/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-faq/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-red-flags/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-checklist/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-checklist/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-scorecard/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-questions/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-examples/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-checklist/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-examples/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-faq/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-scorecard/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-scorecard/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-advanced/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-faq/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-checklist/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-red-flags/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-advanced/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-scorecard/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-questions/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-examples/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-red-flags/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-faq/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-checklist/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-examples/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-implementation/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-red-flags/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-red-flags/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-examples/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-red-flags/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-faq/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-red-flags/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-faq/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-mistakes/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-questions/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-red-flags/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-advanced/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-faq/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-examples/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-red-flags/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-mistakes/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-faq/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-implementation/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-red-flags/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-mistakes/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-advanced/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-questions/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-advanced/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-checklist/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-red-flags/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-scorecard/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-mistakes/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-red-flags/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-questions/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-implementation/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-checklist/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-examples/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-mistakes/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-red-flags/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-scorecard/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-faq/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-scorecard/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-checklist/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-advanced/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-checklist/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-scorecard/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-mistakes/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-mistakes/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-mistakes/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-faq/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-mistakes/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-advanced/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-questions/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-scorecard/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-questions/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-checklist/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-faq/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-questions/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-scorecard/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-implementation/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-implementation/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-checklist/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-questions/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-faq/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-scorecard/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-examples/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-implementation/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-advanced/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-examples/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-faq/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-mistakes/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-examples/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-questions/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-implementation/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-red-flags/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-advanced/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-scorecard/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-examples/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-questions/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-advanced/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-faq/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-examples/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-mistakes/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-red-flags/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-examples/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-examples/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-mistakes/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-checklist/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-advanced/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/partial-dispositions-advanced/",
+      "destination": "/blog/partial-dispositions-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-examples/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-checklist/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-questions/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-mistakes/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-checklist/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-questions/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-implementation/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-checklist/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-faq/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-implementation/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-advanced/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-examples/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-implementation/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-advanced/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/multifamily-considerations-faq/",
+      "destination": "/blog/multifamily-considerations-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-timing-scorecard/",
+      "destination": "/blog/study-timing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-advanced/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-questions/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-implementation/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-checklist/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-checklist/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-red-flags/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-questions/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-checklist/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-faq/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-red-flags/",
+      "destination": "/blog/cost-seg-records-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-faq/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/provider-selection-red-flags/",
+      "destination": "/blog/provider-selection-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-implementation/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-implementation/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bonus-depreciation-questions/",
+      "destination": "/blog/bonus-depreciation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-checklist/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-implementation/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-advanced/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-faq/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-examples/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-scorecard/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-scorecard/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/look-back-study-advanced/",
+      "destination": "/blog/look-back-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-implementation/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-mistakes/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-advanced/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-179-expensing-red-flags/",
+      "destination": "/blog/section-179-expensing-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-checklist/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-examples/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-scorecard/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/str-material-participation-questions/",
+      "destination": "/blog/str-material-participation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/study-eligibility-mistakes/",
+      "destination": "/blog/study-eligibility-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-examples/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-implementation/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-scorecard/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qualified-improvement-property-questions/",
+      "destination": "/blog/qualified-improvement-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-red-flags/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/exit-planning-implementation/",
+      "destination": "/blog/exit-planning-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-implementation/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/audit-documentation-faq/",
+      "destination": "/blog/audit-documentation-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-mistakes/",
+      "destination": "/blog/engineering-study-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-questions/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/like-kind-exchange-basis-advanced/",
+      "destination": "/blog/like-kind-exchange-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-mistakes/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/passive-loss-rules-implementation/",
+      "destination": "/blog/passive-loss-rules-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciation-recapture-scorecard/",
+      "destination": "/blog/depreciation-recapture-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/depreciable-basis-questions/",
+      "destination": "/blog/depreciable-basis-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/asset-components-scorecard/",
+      "destination": "/blog/asset-components-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/section-1245-property-scorecard/",
+      "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    }
+  ]
 }
