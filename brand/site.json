@@ -4,7 +4,7 @@
   "label": "Cost Segregation Book",
   "eyebrow": "The AE Tax Advisors reading room",
   "headline": "Understand the study before you make the investment.",
-  "intro": "Should I Get a Cost Segregation Study? by Dr. Connor Robertson introduces the property, timing, and implementation questions behind accelerated depreciation. Use the companion guides to prepare a more informed conversation.",
+  "intro": "Should I Get a Cost Segregation Study? by AE Tax Advisors introduces the property, timing, and implementation questions behind accelerated depreciation. Use the companion guides to prepare a more informed conversation.",
   "service": "/cost-segregation-study/",
   "role": "Book companion and study literacy",
   "cover": "/book-cover.png",
@@ -37,7 +37,7 @@
     [
       "About the author",
       "/about.html",
-      "Learn about Dr. Connor Robertson and the purpose of this educational resource."
+      "Learn about AE Tax Advisors and the purpose of this educational resource."
     ]
   ],
   "prepare": [
@@ -60,5 +60,6 @@
       "Confirm engineering evidence, report scope, and return implementation."
     ]
   ],
-  "generated": false
+  "generated": false,
+  "outputDirectory": "dist"
 }
