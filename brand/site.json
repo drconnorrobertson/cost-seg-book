@@ -1,0 +1,64 @@
+{
+  "repo": "cost-seg-book",
+  "domain": "costsegbook.com",
+  "label": "Cost Segregation Book",
+  "eyebrow": "The AE Tax Advisors reading room",
+  "headline": "Understand the study before you make the investment.",
+  "intro": "Should I Get a Cost Segregation Study? by Dr. Connor Robertson introduces the property, timing, and implementation questions behind accelerated depreciation. Use the companion guides to prepare a more informed conversation.",
+  "service": "/cost-segregation-study/",
+  "role": "Book companion and study literacy",
+  "cover": "/book-cover.png",
+  "topics": [
+    [
+      "Explore the chapters",
+      "/chapters.html",
+      "Review the book\u2019s subject matter and decide where to start."
+    ],
+    [
+      "Study reading guide",
+      "/resources/cost-seg-study-reading-order/",
+      "Follow the report from property facts to cost reconciliation and implementation."
+    ],
+    [
+      "Decision library",
+      "/blog/",
+      "Explore property records, study methodology, and owner-specific limitations."
+    ],
+    [
+      "Questions and answers",
+      "/faq.html",
+      "Start with common cost segregation and depreciation questions."
+    ],
+    [
+      "Study scope",
+      "https://www.aetaxadvisors.com/cost-segregation-resources/",
+      "Compare evidence, deliverables, fees, and coordination with your return preparer."
+    ],
+    [
+      "About the author",
+      "/about.html",
+      "Learn about Dr. Connor Robertson and the purpose of this educational resource."
+    ]
+  ],
+  "prepare": [
+    "Settlement statement and support for land and building allocation",
+    "Current fixed-asset schedules and previously filed depreciation",
+    "Plans, photographs, improvement invoices, and prior study reports",
+    "Owner limitation analysis and the expected holding or sale plan"
+  ],
+  "steps": [
+    [
+      "Read the framework",
+      "Understand basis, classification, and why accelerated deductions change timing."
+    ],
+    [
+      "Test your circumstances",
+      "Discuss deduction usability, state differences, and disposition assumptions."
+    ],
+    [
+      "Review the proposed study",
+      "Confirm engineering evidence, report scope, and return implementation."
+    ]
+  ],
+  "generated": false
+}

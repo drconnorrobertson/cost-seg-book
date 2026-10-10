@@ -13,5 +13,7 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "node brand-build.cjs",
+  "cleanUrls": false
 }
