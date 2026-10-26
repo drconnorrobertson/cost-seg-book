@@ -1,0 +1,8 @@
+fictional_item,amount,relationship
+Total input,800000,assumed teaching amount
+Land,100000,assumed separate amount
+Analyzed pool,700000,total less assumed land
+Pool A,100000,not a real asset classification
+Pool B,50000,not a real asset classification
+Pool C,550000,not a real asset classification
+Unreconciled alternative grouped total,720000,difference20000 needs explanation
