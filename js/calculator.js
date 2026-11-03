@@ -1,153 +1,41 @@
-/* ==========================================================================
-   Cost Segregation Savings Calculator
-   "Should I Get a Cost Segregation Study?" by AE Tax Advisors
-   ========================================================================== */
-
-document.addEventListener('DOMContentLoaded', function() {
-  var form = document.getElementById('calc-form');
-  var resultsDiv = document.getElementById('calc-results');
-
-  // Reclassification percentages by property type
-  var reclassRates = {
-    'str': 0.35,
-    'ltr': 0.30,
-    'commercial': 0.25,
-    'self-storage': 0.40,
-    'hotel': 0.38,
-    'restaurant': 0.42
-  };
-
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      var purchasePrice = parseFloat(
-        document.getElementById('purchase-price').value.replace(/,/g, '')
-      );
-      var propertyType = document.getElementById('property-type').value;
-      var sqft = parseFloat(
-        document.getElementById('square-footage').value.replace(/,/g, '')
-      );
-      var taxBracket = parseFloat(
-        document.getElementById('tax-bracket').value
-      ) / 100;
-
-      if (!purchasePrice || !propertyType || !sqft || !taxBracket) {
-        alert('Please fill in all fields.');
-        return;
-      }
-
-      var reclassRate = reclassRates[propertyType];
-      var reclassifiedAmount = purchasePrice * reclassRate;
-      var bonusDepreciation = reclassifiedAmount * 1.0; // 100% bonus depreciation
-      var taxSavings = bonusDepreciation * taxBracket;
-      var studyCost = sqft * 1; // $1 per square foot
-      var netBenefit = taxSavings - studyCost;
-      var roi = (netBenefit / studyCost) * 100;
-
-      // Update result values in the DOM
-      document.getElementById('result-reclassified').textContent =
-        formatCurrency(reclassifiedAmount);
-      document.getElementById('result-depreciation').textContent =
-        formatCurrency(bonusDepreciation);
-      document.getElementById('result-tax-savings').textContent =
-        formatCurrency(taxSavings);
-      document.getElementById('result-study-cost').textContent =
-        formatCurrency(studyCost);
-      document.getElementById('result-net-benefit').textContent =
-        formatCurrency(netBenefit);
-      document.getElementById('result-roi').textContent =
-        roi.toFixed(0) + '%';
-
-      // Show results with animation
-      resultsDiv.classList.remove('hidden');
-      resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-      // Animate each result item in sequence
-      var resultItems = resultsDiv.querySelectorAll('.result-item');
-      resultItems.forEach(function(item, index) {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(20px)';
-        setTimeout(function() {
-          item.style.transition = 'all 0.4s ease';
-          item.style.opacity = '1';
-          item.style.transform = 'translateY(0)';
-        }, index * 100);
-      });
-    });
+(function () {
+  'use strict';
+  const names = ['basis','eligible','bonus','use','rate','fee'];
+  function hundredths(value, maximum) {
+    const s=String(value).trim();
+    if (!/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{1,2})?$/.test(s)) throw new Error('Complete every field with a nonnegative number and at most two decimal places. Use 0 only when confirmed.');
+    const p=s.replace(/,/g,'').split('.');
+    const n=Number(p[0])*100+Number((p[1]||'').padEnd(2,'0'));
+    if (!Number.isSafeInteger(n) || n>maximum*100) throw new Error('Amounts must not exceed 1 billion; percentages must be between 0 and 100.');
+    return n;
   }
-
-  /**
-   * Format a number as US currency (no decimals).
-   */
-  function formatCurrency(num) {
-    return '$' + num.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  function calculate(v) {
+    const basis=hundredths(v.basis,1000000000),eligible=hundredths(v.eligible,1000000000),fee=hundredths(v.fee,1000000000);
+    const bonus=hundredths(v.bonus,100),use=hundredths(v.use,100),rate=hundredths(v.rate,100);
+    if (eligible>basis) throw new Error('The assumed eligible portion cannot exceed the entered depreciable basis.');
+    const deduction=Math.round(eligible*bonus/10000);
+    const usable=Math.round(deduction*use/10000);
+    const effect=Math.round(usable*rate/10000);
+    return {basis,eligible,deduction,usable,effect,fee,effectLessFee:effect-fee};
   }
-
-  // Format purchase price input with commas as the user types
-  var priceInput = document.getElementById('purchase-price');
-  if (priceInput) {
-    priceInput.addEventListener('input', function(e) {
-      var value = e.target.value.replace(/[^0-9]/g, '');
-      if (value) {
-        value = parseInt(value, 10).toLocaleString();
-      }
-      e.target.value = value;
-    });
-  }
-
-  // Format square footage input with commas as the user types
-  var sqftInput = document.getElementById('square-footage');
-  if (sqftInput) {
-    sqftInput.addEventListener('input', function(e) {
-      var value = e.target.value.replace(/[^0-9]/g, '');
-      if (value) {
-        value = parseInt(value, 10).toLocaleString();
-      }
-      e.target.value = value;
-    });
-  }
-
-  // --------------------------------------------------------------------------
-  // Mobile Navigation Toggle
-  // --------------------------------------------------------------------------
-  var navToggle = document.querySelector('.nav-toggle');
-  var navLinks = document.querySelector('.nav-links');
-
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-    });
-
-    // Close mobile nav when a link is clicked
-    var navItems = navLinks.querySelectorAll('a');
-    navItems.forEach(function(link) {
-      link.addEventListener('click', function() {
-        navLinks.classList.remove('active');
-      });
-    });
-  }
-
-  // --------------------------------------------------------------------------
-  // Scroll Animation Observer
-  // --------------------------------------------------------------------------
-  var animatedElements = document.querySelectorAll('.animate-on-scroll');
-
-  if (animatedElements.length > 0 && 'IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(
-      function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    animatedElements.forEach(function(el) {
-      observer.observe(el);
-    });
-  }
-});
+  if (typeof module!=='undefined' && module.exports) module.exports={calculate};
+  if (typeof document==='undefined') return;
+  document.addEventListener('DOMContentLoaded',function(){
+    const form=document.getElementById('calc-form'),out=document.getElementById('calc-results');
+    if (!form) return;
+    const read=()=>Object.fromEntries(names.map(k=>[k,form.elements.namedItem(k).value]));
+    const money=c=>'$'+(c/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+    function render(){
+      try {
+        const r=calculate(read());out.replaceChildren();
+        const text=document.createElement('p');text.textContent='Illustration from your inputs. The federal effect below is a gross amount, not incremental savings, a refund or an investment return.';out.append(text);
+        const rows=[['Entered depreciable basis',r.basis],['Assumed bonus-eligible portion',r.eligible],['Modeled bonus deduction',r.deduction],['Assumed currently usable deduction',r.usable],['Gross illustrative federal tax effect',r.effect],['Entered study and implementation fee',r.fee],['Gross illustrative effect less entered fee',r.effectLessFee]];
+        const list=document.createElement('dl');rows.forEach(([label,value])=>{const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=money(value);list.append(dt,dd)});out.append(list);
+      }catch(e){out.textContent=e.message;}
+    }
+    form.addEventListener('submit',e=>{e.preventDefault();render()});
+    form.addEventListener('input',()=>{out.textContent='Inputs changed. Calculate again to refresh the illustration.'});
+    document.getElementById('calc-example').addEventListener('click',()=>{const v={basis:'800000',eligible:'200000',bonus:'60',use:'50',rate:'37',fee:'2500'};names.forEach(k=>form.elements.namedItem(k).value=v[k]);render()});
+    document.getElementById('calc-clear').addEventListener('click',()=>{form.reset();out.textContent='Entries cleared. Complete every field to calculate.'});
+  });
+})();
