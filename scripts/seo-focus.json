@@ -1,0 +1,14 @@
+{
+  "title": "Cost Segregation Book & Report Reading Guide | AE Tax",
+  "description": "Read the AE cost segregation book and learn how to review a study report, its assumptions and the handoff to your tax preparer.",
+  "heading": "Use the book to understand the report",
+  "intro": "Start with the report-reading guide, then use the learning library to investigate the records and assumptions behind the study.",
+  "links": [
+    {
+      "href": "/advisory-guides/read-cost-segregation-report/",
+      "label": "Read a cost segregation report"
+    }
+  ],
+  "buildCommand": "node scripts/production-build.cjs && node scripts/practical-homepage.cjs dist && node scripts/brand-check.mjs dist",
+  "outputDirectory": "dist"
+}
