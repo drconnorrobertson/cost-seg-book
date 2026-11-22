@@ -1,0 +1,4 @@
+fictional_proposal,supplied_square_feet,headline_study_fee,additional_visit_and_travel,separate_preparer_estimate,additional_specified_support,known_fee_subtotal,comparable_total_under_assumptions,total_per_supplied_square_foot,after_tax_cost,tax_savings,limitations
+A,3000,1200,800,600,400,3000,3000,1,,,Inventedamountsnotquotes/marketaverages;samesuppliedscope;nootherchargesortaxesassumed;deductibilityqualityeligibilityandsavingsunresolved
+B,3000,2400,0,600,0,3000,3000,1,,,Inventedamounts;visit/travelandspecifiedsupportassumedincludedat0additionalcost;nootherchargesortaxesassumed;noqualityfinding
+C,3000,1800,,600,,2400,,,,,Visit/supportunknownnotzero;subtotalnotcompletedtotal;unitpriceandtaxresultsunresolved
