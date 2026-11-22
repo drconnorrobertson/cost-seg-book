@@ -88,11 +88,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/cost-seg-records-examples/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/look-back-study-faq/",
       "destination": "/blog/look-back-study-field-guide/",
       "permanent": true
@@ -175,11 +170,6 @@
     {
       "source": "/blog/depreciable-basis-red-flags/",
       "destination": "/blog/depreciable-basis-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/engineering-study-red-flags/",
-      "destination": "/blog/engineering-study-field-guide/",
       "permanent": true
     },
     {
@@ -338,16 +328,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/cost-seg-records-scorecard/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/cost-seg-records-faq/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/partial-dispositions-scorecard/",
       "destination": "/blog/partial-dispositions-field-guide/",
       "permanent": true
@@ -378,18 +358,8 @@
       "permanent": true
     },
     {
-      "source": "/blog/cost-seg-records-mistakes/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/depreciation-recapture-mistakes/",
       "destination": "/blog/depreciation-recapture-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/engineering-study-faq/",
-      "destination": "/blog/engineering-study-field-guide/",
       "permanent": true
     },
     {
@@ -408,11 +378,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/engineering-study-scorecard/",
-      "destination": "/blog/engineering-study-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/provider-selection-questions/",
       "destination": "/blog/provider-selection-field-guide/",
       "permanent": true
@@ -425,11 +390,6 @@
     {
       "source": "/blog/passive-loss-rules-faq/",
       "destination": "/blog/passive-loss-rules-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/engineering-study-questions/",
-      "destination": "/blog/engineering-study-field-guide/",
       "permanent": true
     },
     {
@@ -468,11 +428,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/engineering-study-examples/",
-      "destination": "/blog/engineering-study-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/section-179-expensing-implementation/",
       "destination": "/blog/section-179-expensing-field-guide/",
       "permanent": true
@@ -505,11 +460,6 @@
     {
       "source": "/blog/partial-dispositions-questions/",
       "destination": "/blog/partial-dispositions-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/engineering-study-implementation/",
-      "destination": "/blog/engineering-study-field-guide/",
       "permanent": true
     },
     {
@@ -583,11 +533,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/engineering-study-advanced/",
-      "destination": "/blog/engineering-study-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/partial-dispositions-advanced/",
       "destination": "/blog/partial-dispositions-field-guide/",
       "permanent": true
@@ -653,16 +598,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/cost-seg-records-implementation/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/cost-seg-records-advanced/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/multifamily-considerations-faq/",
       "destination": "/blog/multifamily-considerations-field-guide/",
       "permanent": true
@@ -678,18 +613,8 @@
       "permanent": true
     },
     {
-      "source": "/blog/cost-seg-records-questions/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/audit-documentation-implementation/",
       "destination": "/blog/audit-documentation-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/engineering-study-checklist/",
-      "destination": "/blog/engineering-study-field-guide/",
       "permanent": true
     },
     {
@@ -708,18 +633,8 @@
       "permanent": true
     },
     {
-      "source": "/blog/cost-seg-records-checklist/",
-      "destination": "/blog/cost-seg-records-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/study-eligibility-faq/",
       "destination": "/blog/study-eligibility-field-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/cost-seg-records-red-flags/",
-      "destination": "/blog/cost-seg-records-field-guide/",
       "permanent": true
     },
     {
@@ -873,11 +788,6 @@
       "permanent": true
     },
     {
-      "source": "/blog/engineering-study-mistakes/",
-      "destination": "/blog/engineering-study-field-guide/",
-      "permanent": true
-    },
-    {
       "source": "/blog/passive-loss-rules-questions/",
       "destination": "/blog/passive-loss-rules-field-guide/",
       "permanent": true
@@ -915,6 +825,306 @@
     {
       "source": "/blog/section-1245-property-scorecard/",
       "destination": "/blog/section-1245-property-field-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-advanced/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-advanced",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-advanced/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-checklist/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-checklist",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-checklist/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-examples/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-examples",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-examples/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-faq/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-faq",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-faq/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-field-guide/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-field-guide",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-field-guide/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-implementation/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-implementation",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-implementation/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-mistakes/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-mistakes",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-mistakes/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-questions/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-questions",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-questions/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-red-flags/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-red-flags",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-red-flags/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-scorecard/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-scorecard",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-seg-records-scorecard/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-advanced/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-advanced",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-advanced/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-checklist/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-checklist",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-checklist/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-examples/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-examples",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-examples/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-faq/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-faq",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-faq/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-field-guide/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-field-guide",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-field-guide/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-implementation/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-implementation",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-implementation/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-mistakes/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-mistakes",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-mistakes/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-questions/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-questions",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-questions/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-red-flags/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-red-flags",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-red-flags/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-scorecard/",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-scorecard",
+      "destination": "/resources/cost-seg-study-reading-order/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engineering-study-scorecard/index.html",
+      "destination": "/resources/cost-seg-study-reading-order/",
       "permanent": true
     }
   ]
