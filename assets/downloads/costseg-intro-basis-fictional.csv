@@ -1,0 +1,4 @@
+fictional_case,total_purchase_basis,land_supplied,depreciable_allocation_supplied,allocation_sum,excess_over_total,review_basis_carried_forward,state,short_life_allocation,first_year_depreciation,tax_savings
+A,500000,100000,400000,500000,0,400000,Arithmetic reconciles only,,,
+B,500000,,,,,,Missing allocation; unresolved,,,
+C,500000,100000,500000,600000,100000,,Conflicting inputs; correct before use,,,
